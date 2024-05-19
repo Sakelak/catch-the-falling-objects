@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+#basket {
+    position: absolute;
+    bottom: 10px;
+    width: 80px;
+    height: 40px;
+    background-color: #8b4513;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#score-board {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
