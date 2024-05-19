@@ -33,3 +33,20 @@ body {
     left: 10px;
     font-size: 20px;
 }
+
+#description {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    font-size: 14px;
+    width: 380px;
+    text-align: center;
+}
+
+.falling-object {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    top: 0;
+}

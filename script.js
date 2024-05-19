@@ -20,7 +20,7 @@ function moveBasket(event) {
 function createFallingObject() {
     const object = document.createElement('div');
     object.classList.add('falling-object');
-    object.style.left = Math.floor(Math.random() * 360) + 'px';
+    object.style.left = Math.floor(Math.random() * 380) + 'px';
     gameContainer.appendChild(object);
     moveFallingObject(object);
 }
@@ -28,10 +28,10 @@ function createFallingObject() {
 function moveFallingObject(object) {
     let position = 0;
     const fallInterval = setInterval(() => {
-        if (position >= 560) {
+        if (position >= 580) {
             clearInterval(fallInterval);
             gameContainer.removeChild(object);
-            if (parseInt(object.style.left) > basketPosition - 40 && parseInt(object.style.left) < basketPosition + 80) {
+            if (parseInt(object.style.left) > basketPosition - 20 && parseInt(object.style.left) < basketPosition + 80) {
                 score++;
                 scoreBoard.textContent = 'Score: ' + score;
                 if (score === 10) {
